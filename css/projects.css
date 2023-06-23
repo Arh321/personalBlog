@@ -1,0 +1,123 @@
+@import url(color.css);
+@import url(font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.OurProjects__container{
+    max-width: 572px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 12px;
+    
+}
+
+.OurProjects__container h1{
+    width: 100%;
+    font-family:  'Medium';
+    font-weight: 800;
+    font-size: 3.6rem;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+    color: #fff;
+}
+
+.OurProjects-explain{
+    width: 100%;
+    padding: 32px 0;
+    font-family: 'Medium';
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--header-meno);
+}
+
+.project__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.proje{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-image: url(../Assets/images/Screenshot\ \(185\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+
+.proje p:first-child{
+    font-family: 'Medium';
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+    
+}
+
+.proje p:nth-child(2){
+    font-family: 'Light';
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+}
+
+.proje-hover{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: var(--images-onHover);
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.proje:hover .proje-hover{
+    display: block;
+}
+
+.--img1{
+    background-image: url(../Assets/images/Screenshot\ \(188\).png);
+}
+.--img2{
+    background-image: url(../Assets/images/Screenshot\ \(189\).png);
+}
+
+
+@media screen and (min-width: 768px){
+    .OurProjects__container{
+        max-width: 767px;
+    }
+
+    .project__container{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .proje{
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .OurProjects__container{
+        max-width: 1240px;
+    }
+}

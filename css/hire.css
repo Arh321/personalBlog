@@ -1,0 +1,60 @@
+@import url(color.css);
+@import url(font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.hire__section{
+    width: 100%;
+    height: 440px;
+    background-image: url(../Assets/images/bg_1.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.hire-status{
+    width: 340px;
+    font-family: 'Bold';
+    font-size: 3.6rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.hire-status span{
+    font-family: 'Bold';
+    font-size: 3.6rem;
+    color: var(--button);
+    text-align: center;
+}
+
+.hire-explain{
+    width: 100%;
+    padding: 0 16px;
+    font-family: 'Medium';
+    font-size: 1.4rem;
+    color: var(--header-meno);
+    text-align: center;
+}
+
+.hire__section button{
+    width: 136px;
+    height: 40px;
+    background-color: var(--button);
+    font-family: 'Medium';
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+}

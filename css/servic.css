@@ -1,0 +1,113 @@
+@import url(color.css);
+@import url(font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.Services{
+    max-width: 572px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 12px;
+    margin: 0 auto;
+}
+
+.Services h1{
+    width: 100%;
+    font-family:  'Medium';
+    font-weight: 800;
+    font-size: 3.6rem;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+    color: #fff;
+}
+
+.Services-explain{
+    width: 100%;
+    padding: 32px 0;
+    font-family: 'Medium';
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--header-meno);
+}
+
+.Services__boxes-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Services-box{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+    background-color: var(--box-background);
+    cursor: pointer;
+}
+
+.Services-box svg path{
+    fill: var(--button);
+}
+
+.Services-box p{
+    padding: 24px 0;
+    font-family: 'Medium';
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--white);
+}
+.Services-box div{
+    width: 32px;
+    border-bottom: 1px solid var(--button);
+}
+
+.Services-box:hover{
+    background-color: var(--button);
+}
+
+.Services-box:hover svg path{
+    fill: var(--white);
+}
+
+.Services-box:hover p{
+    color: black;
+}
+
+.Services-box:hover div{
+    border-color: black;
+}
+
+@media screen and (min-width: 768px) {
+    .Services{
+        max-width: 767px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Services__boxes-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    
+    .Services-box{
+        width: 30%;   
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .Services{
+        max-width: 1240px;
+    }
+}

@@ -1,0 +1,135 @@
+@import url(color.css);
+@import url(font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.Resume{
+    max-width: 572px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 0 auto;
+}
+
+.Resume-headtext{
+    width: 100%;
+    font-family:  'Medium';
+    font-weight: 800;
+    font-size: 3.6rem;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+    color: #fff;
+}
+
+.Resume-explain{
+    width: 100%;
+    padding: 32px 0;
+    font-family: 'Medium';
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--header-meno);
+}
+
+.Resume__box-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Resume__box{
+    width: 100%;
+    min-height: 360px;
+    border-radius: 6px;
+    background-color: var(--box-background);
+    padding: 36px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.Resume__box-date{
+    width: 100%;
+    font-family: 'Extra-Bold';
+    font-size: 2.8rem;
+    color: var(--button);
+}
+
+.Resume__box-proje--Title{
+    width: 100%;
+    font-family: 'Medium';
+    font-size: 2.8rem;
+    color: var(--white);
+}
+
+.Resume__box-proje--place{
+    width: 100%;
+    font-family: 'Medium';
+    font-size: 1.6rem;
+    color: var(--header-meno);
+}
+
+.--fix{
+   padding-top: 24px;
+}
+
+.Resume--button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 72px 0;
+}
+
+.Resume--button button{
+    width: 196px;
+    height: 64px;
+    background-color: var(--button);
+    border: none;
+    border-radius: 32px;
+    font-family:  "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+}
+
+.Resume--button button:active{
+    outline: 2px solid var(--button-outLine);
+}
+
+@media screen and (min-width: 768px) {
+    .Resume{
+        max-width: 767px;
+        display: flex;
+        padding: 12px;
+        margin: 0 auto;
+    }
+    .Resume__box-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: space-between;
+    }
+    
+    .Resume__box{
+        width: 48%; 
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    .Resume{
+        max-width: 1240px;
+    }
+}

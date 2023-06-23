@@ -35,3 +35,47 @@ setInterval(() => {
     }
     change = change * -1
 },9000)
+
+
+
+
+
+let i = 1;
+document.getElementById('open')
+.addEventListener('click',() => {
+    const content = document.getElementById('menu')
+        content.style.display = 'flex'
+        content.style.width = '200px'
+        content.style.animationName = 'chang'
+        content.style.right = '0'
+})
+
+document.getElementById('close')
+.addEventListener('click',() => {
+    const content = document.getElementById('menu')
+        content.style.width = '0'
+        content.style.animationName = 'chang2'
+        content.style.right = '-40px'
+})
+
+const item = document.querySelectorAll('#menu span')
+item.forEach((each,index) => {
+    const y = each.innerHTML
+    each.addEventListener('click' , () => {
+        const y = each.innerHTML
+        const element = document.getElementById(y)
+        window.scrollTo(0,element.offsetTop - 60)
+    })
+})
+
+const section = document.querySelectorAll('#header-menu span')
+section.forEach((each,index) => {
+    const y = each.innerHTML
+    each.addEventListener('click' , () => {
+        const y = each.innerHTML
+        const element = document.getElementById(y)
+        window.scrollTo(0,element.offsetTop - 60)
+    })
+})
+
+

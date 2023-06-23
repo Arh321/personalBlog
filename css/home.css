@@ -1,0 +1,216 @@
+@import url(color.css);
+@import url(font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.home{
+    max-width: 572px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+    animation: move 1s;
+    margin: 0 auto;
+}
+
+ .home_introFirst{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.home_introFirst img{
+    width: 420px;
+    height: 100%;
+}
+
+.introFirst{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+    top: 44px;
+    z-index: 2;
+}
+
+.introFirst--text{
+    font-family:  "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+}
+.--line1{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-highLight);
+    letter-spacing: 1.6px;
+}
+.--line2{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 24px;
+    color: var(--white);
+    line-height: 32px;
+}
+.--line2 span{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 24px;
+    color: var(--text-highLight);
+}
+.--line3{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.introFirst_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.introFirst_button button{
+    border-radius: 28px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.--button1{
+    background-color: var(--button);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+}
+
+.--button2{
+    background: none;
+    border: 1px solid var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.--button1:active{
+    outline: 2px solid var(--button-outLine);
+
+}
+.--button2:active{
+    outline: 1px solid var(--button-outLine);
+    border-color: var(--button-outLine);
+}
+.home__buttons-nextimage{
+    position: absolute;
+    width: 100px;
+    bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    
+}
+.home__buttons-nextimage button{
+    width: 16px;
+    height: 16px;
+    background: none;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--header-meno);
+    cursor: pointer;
+}
+.home_introsecond{
+    display: none;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    animation: move 1s;
+}
+
+.home_introsecond img{
+    width: 420px;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .home{
+        max-width: 762px;
+        min-height: 110vh;
+    }
+
+    .home_introFirst img{
+        width: 480px;
+    }
+    .home_introsecond img{
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .home{
+        max-width: 1240px;
+    }
+    .home_introFirst{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .home_introFirst img{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+    
+    .introFirst{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
+        top: 20%;
+        left: 0;
+    }
+    .home_introsecond{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .home_introsecond img{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+}

@@ -1,0 +1,118 @@
+@import url(color.css);
+@import url(font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.message__box{
+    max-width: 572px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 12px;
+    margin-top: 64px; 
+}
+
+.message-form__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background-color: var(--form);
+}
+
+.message-form__container input{
+    width: 100%;
+    height: 48px;
+    background-color: var(--white);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+}
+
+.message-form__container input::placeholder{
+    font-family: 'Regular';
+    font-size: 1.6rem;
+    padding-left: 12px;
+}
+
+.message-form__container textarea{
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+}
+
+.message-form__container textarea::placeholder{
+    font-family: 'Regular';
+    font-size: 1.6rem;
+    padding-left: 12px;
+    padding-top: 8px;
+}
+
+.message-form__container button{
+    width: 100%;
+    height: 56px;
+    background-color: var(--button);
+    font-family: 'Medium';
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 36px;
+}
+
+.message-form__container button:active{
+    border: 1.6px solid var(--button-outLine);
+}
+
+.message-form-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.message-form-image img{
+    width: 400px;
+    background-color: var(--header-meno);
+}
+
+@media screen and (min-width: 768px){
+    .message__box{
+        max-width: 769px;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 0;
+    }
+    .message-form__container{
+        width: 50%;
+    }
+    .message-form-image{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .message__box{
+        max-width: 1240px;
+        height: 100vh;
+    }
+    .message-form__container{
+        gap: 24px;
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+    .message-form-image img{
+        width: 100%;
+    }
+    .message-form__container button{
+        width: 40%;
+    }
+}

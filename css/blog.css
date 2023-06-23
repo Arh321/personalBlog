@@ -1,0 +1,129 @@
+@import url(color.css);
+@import url(font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.OurBlog__container{
+    max-width: 572px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 12px;
+}
+
+.OurBlog__container h1{
+    width: 100%;
+    font-family:  'Medium';
+    font-weight: 800;
+    font-size: 3.6rem;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+    color: #fff;
+}
+
+.OurBlog-explain{
+    width: 100%;
+    padding: 32px 0;
+    font-family: 'Medium';
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--header-meno);
+}
+
+.OurBlog-post__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.OurBlog-post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
+}
+
+.post-image{
+    width: 100%;
+    height: 320px;
+}
+
+.post-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.post-detail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.post-detail span{
+    font-family: 'Medium';
+    font-size: 1.6rem;
+    color: var(--button);
+}
+.post-detail span:nth-child(2){
+    padding: 0 8px;
+    cursor: pointer;
+}
+.post-detail svg{
+    cursor: pointer;
+}
+.post-detail svg path{
+    color: var(--button);
+}
+
+.post-topic{
+    width: 100%;
+    font-family: 'Medium';
+    font-size: 1.8rem;
+    color: var(--white);
+    cursor: pointer;
+}
+.post-topic:hover{
+    color: var(--button);
+}
+.post-explain{
+    width: 100%;
+    font-family: 'Medium';
+    font-size: 1.4rem;
+    color: var(--header-meno);
+}
+
+@media screen and (min-width: 768px){
+    .OurBlog__container{
+        max-width: 767px;
+    }
+    .OurBlog-post__container{
+        width: 100%;
+        flex-direction: row;
+        gap:5%;
+    }
+    
+    .OurBlog-post{
+        width: 30%;
+    }
+
+    .post-detail span{
+        font-family: 'Medium';
+        font-size: 1.4rem;
+        color: var(--button);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .OurBlog__container{
+        max-width: 1240px;
+    }
+}
