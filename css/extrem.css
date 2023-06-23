@@ -8,7 +8,7 @@
 }
 
 @keyframes move {
-    0%{scale: 0.95; opacity: 0.2;}
+    0%{scale: 0.9; opacity: 0.2;}
     100%{scale: 1; opacity: 1;}
 }
 
